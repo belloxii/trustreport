@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Shield + Map Pin Silhouette -->
+  <path
+    d="M32 3 L56 11.5 V33.5 C56 46 45.5 55 32 61 C18.5 55 8 46 8 33.5 V11.5 L32 3 Z"
+    fill="url(#shieldGrad)"
+    filter="url(#shadow)"
+  />
+
+  <!-- Subtle inner edge highlight -->
+  <path
+    d="M32 5.5 L53.5 13 V33.5 C53.5 44.5 44 52.8 32 58.2 C20 52.8 10.5 44.5 10.5 33.5 V13 L32 5.5 Z"
+    stroke="rgba(255,255,255,0.3)"
+    stroke-width="1.2"
+    fill="none"
+  />
+
+  <!-- Central Water Drop / Verification Teardrop -->
+  <path
+    d="M32 16 C38 23.5 42 28.5 42 33.5 A10 10 0 0 1 22 33.5 C22 28.5 26 23.5 32 16 Z"
+    fill="url(#dropGrad)"
+  />
+
+  <!-- Golden Sun / Verified Core Motif -->
+  <circle cx="32" cy="34" r="4.2" fill="url(#sunGrad)" stroke="#ffffff" stroke-width="1" />
+
+  <!-- Base Water Waves -->
+  <path
+    d="M16 43 C20 43 20 46 24 46 C28 46 28 43 32 43 C36 43 36 46 40 46 C44 46 44 43 48 43"
+    stroke="#ffffff"
+    stroke-width="2.8"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.95"
+  />
+</svg>

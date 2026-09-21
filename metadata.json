@@ -1,0 +1,10 @@
+{
+  "name": "TrustReport",
+  "description": "Verified community incident reporting, credibility verification, and flood safety platform for Ilorin and beyond.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
